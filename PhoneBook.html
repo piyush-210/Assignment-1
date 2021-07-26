@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneBook</title>
+    <style>
+        .phonebook{
+            text-align: center;
+            margin: 3% auto;
+            font-size: 5em;
+            text-decoration: underline;
+            position: sticky;
+            top: 0;
+            background-color: blue;
+        }
+
+        ul li span{
+            font-size: 2em;
+        }
+
+        ul{
+            font-size: 1.5em;
+            text-align: center;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .A{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 50px;
+            margin: 5% auto;
+        }
+        
+        ul li::before{
+            display:inline-block;
+            height:30px;
+            width:25px;
+            content: "";
+            background:url('http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/man-office-worker.png') no-repeat 0 0;
+            background-size: 32px 32px;
+
+            margin-right: 5%;
+        }
+        ul li::after{
+            margin-left: 5%;
+            content: "9422241298";
+        }
+        
+        #dot{
+            position: absolute;
+            left: 150px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="phonebook">Phone Book</div>
+    
+    
+    
+    <div class="phonebook" >A</div>
+    <ul class="A" id="ula1">
+        <li><span>A</span>ndrew</li>
+        <li><span>A</span>ndrew</li>
+        <li><span>A</span>ndrew</li>
+    </ul>
+    <ul class="A" id="ula2">
+        <li><span>A</span>ndrew</li>
+        <li><span>A</span>ndrew</li>
+        <li><span>A</span>ndrew</li>
+    </ul>
+    <ul class="A" id="ula3">
+        <li><span>A</span>ndrew</li>
+        <li><span>A</span>ndrew</li>
+        <li><span>A</span>ndrew</li>
+    </ul>
+    
+    
+    
+    <div class="phonebook">B</div>
+    <ul class="A" id="ula1">
+        <li><span>B</span>hadur</li>
+        <li><span>B</span>hadur</li>
+        <li><span>B</span>hadur</li>
+    </ul>
+    <ul class="A" id="ula2">
+        <li><span>B</span>hadur</li>
+        <li><span>B</span>hadur</li>
+        <li><span>B</span>hadur</li>
+    </ul>
+    <ul class="A" id="ula3">
+        <li><span>B</span>hadur</li>
+        <li><span>B</span>hadur</li>
+        <li><span>B</span>hadur</li>
+    </ul>
+    
+    
+    
+    <div class="phonebook">C</div>
+    <ul class="A" id="ula1">
+        <li><span>C</span>hutki</li>
+        <li><span>C</span>hutki</li>
+        <li><span>C</span>hutki</li>
+    </ul>
+    <ul class="A" id="ula2">
+        <li><span>C</span>hutki</li>
+        <li><span>C</span>hutki</li>
+        <li><span>C</span>hutki</li>
+    </ul>
+    <ul class="A" id="ula3">
+        <li><span>C</span>hutki</li>
+        <li><span>C</span>hutki</li>
+        <li><span>C</span>hutki</li>
+    </ul>
+    
+    
+    
+    <div class="phonebook">D</div>
+    <ul class="A" id="ula1">
+        <li><span>D</span>anger</li>
+        <li><span>D</span>anger</li>
+        <li><span>D</span>anger</li>
+    </ul>
+    <ul class="A" id="ula2">
+        <li><span>D</span>anger</li>
+        <li><span>D</span>anger</li>
+        <li><span>D</span>anger</li>
+    </ul>
+    <ul class="A" id="ula3">
+        <li><span>D</span>anger</li>
+        <li><span>D</span>anger</li>
+        <li><span>D</span>anger</li>
+    </ul>
+    
+    
+    
+    
+    <div class="phonebook">E</div>
+    <ul class="A" id="ula1">
+        <li><span>E</span>lephent</li>
+        <li><span>E</span>lephent</li>
+        <li><span>E</span>lephent</li>
+    </ul>
+    <ul class="A" id="ula2">
+        <li><span>E</span>lephent</li>
+        <li><span>E</span>lephent</li>
+        <li><span>E</span>lephent</li>
+    </ul>
+    <ul class="A" id="ula3">
+        <li><span>E</span>lephent</li>
+        <li><span>E</span>lephent</li>
+        <li><span>E</span>lephent</li>
+    </ul>
+
+
+    <div id="dot">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+    
+    <div class="phonebook">Z</div>
+    <ul class="A" id="ula1">
+        <li><span>Z</span>abra</li>
+        <li><span>Z</span>abra</li>
+        <li><span>Z</span>abra</li>
+    </ul>
+    <ul class="A" id="ula2">
+        <li><span>Z</span>abra</li>
+        <li><span>Z</span>abra</li>
+        <li><span>Z</span>abra</li>
+    </ul>
+    <ul class="A" id="ula3">
+        <li><span>Z</span>abra</li>
+        <li><span>Z</span>abra</li>
+        <li><span>Z</span>abra</li>
+    </ul>
+</body>
+</html>
