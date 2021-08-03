@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        header{
+            background-color: orange;
+            color: white;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            height: 10vh;
+
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            justify-content: space-between;
+
+            
+        }
+        
+        .nav-items{
+            margin-right: 15px;
+            justify-content: space-around;
+            font-size: 20px;
+            padding:10px 20px;
+            border: 1px solid orange;
+            
+            list-style: none;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+
+            transition:border-radius 200ms linear, background-color 200ms linear;
+        }
+        nav a:first-of-type{
+            background-color:#FF8C00 ;
+            border-radius: 5px;
+        }
+
+        nav:last-of-type{
+            margin-right: 20px;
+        }
+
+        .nav-items:hover{
+            background-color:	#FF8C00;
+            border-radius: 5px;
+        }
+
+        #logo{
+            display: flex;
+            justify-content: left;
+            margin-left: 110px;
+            font-size: 45px;
+            font-weight: bolder;
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            z-index: 1;
+        }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+        #slide-show{
+            position: relative;
+            top: 15vh;
+            width: 73%;
+            display: flex;
+            margin: auto;
+            overflow: hidden;
+            box-shadow: 0px 0px 15px black;
+        }
+
+        .animation-img{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            animation-name:slide-show;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slide-show{
+            0%{
+                left: 0%;
+            }
+            10%{
+                left: 0%;
+            }
+            20%
+            { 
+                left:-100%;
+            }
+            30%
+            {
+                left:-100%;
+            }
+            40%
+            {
+                left: -200%;
+            }
+            50%
+            {
+                left: -200%;
+            }
+            60%{
+                left: -300%;
+            }
+            70%{
+                left: -300%;
+            }
+            80%{
+                left: -200%;
+            }
+            90%{
+                left: -100%;
+            }
+            100%{
+                left: 0%;
+            }
+        }
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+        h1{
+            position: relative;
+            top: 18vh;
+            text-align: center;
+            font-size: 3em;
+        }
+
+
+        #card-div{
+            position: relative;
+            top: 18vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items:center;
+            justify-content: center;
+        }
+
+        .cards{
+            background-color: white;
+            width: 350px;
+            color: black;
+            margin: 2%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .cards img{
+            width: 100%;
+            height: 50%;
+            transition: opacity 250ms linear;
+        }
+        .cards img:hover{
+            opacity: 0.5;
+        }
+        
+        .info{
+            padding: 3%;
+            box-sizing: border-box;
+        }
+
+        
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+        #contact-us{
+            position: relative;
+            top: 22vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:orange;
+            width: 78%;
+            margin: auto;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 10px black;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        #left{
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 60vh;
+            width: 400px;
+            z-index: 1;
+            font-size: 30px;
+            color: white;
+            font-weight: bolder;
+            box-sizing: border-box;
+        }
+
+        #phone{
+            position: relative;
+
+            top: -3vh;
+            background-color: white;
+            width: 50px;
+            height: 80px;
+            border: 1px solid orange;
+            border-radius: 5px;
+            
+        }
+
+        #dot{
+            width: 10px;
+            height: 10px;
+            border: 1px solid orange;
+            border-radius: 90px;
+            position: relative;
+            top: 65px;
+            margin: auto;
+            background-color: orange;
+        }
+
+        form{
+            flex-grow: 2;
+            background-color: white;
+            height: 100%;
+        }
+        table{
+            background-color: white;
+            width: 100%;
+            height: 100%;
+        }
+        table tr td {
+            margin: 10px;
+            padding: 15px;
+        }
+
+        input{
+            margin: 20px;
+            width: 80%;
+            height: 4vh;
+            border:1px solid orange;
+        }
+        textarea{
+            border:1px solid orange;
+            margin-left:20px;
+            width: 91%;
+            height: 100%;
+        }
+        input[type="submit"]{
+            width: 92%;
+            height: 5vh;
+            font-size: 20px;
+            background-color: orange;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 981px){
+            #contact-us{
+                flex-direction: column;
+            }
+            form{
+                width: 100%;
+                text-align: center;
+                flex-grow: 2;
+            }
+            #left{
+                width: auto;
+                text-align: center;
+            }
+            table{
+                text-align: center;
+            }
+            
+            input{
+                margin: 5px;
+            }
+            table tr td{
+                margin: 0px;
+                padding: 0px;
+            }
+            textarea{
+                margin: 0px;
+                height: 100%;
+            }
+            
+        }
+
+        /* @media screen and (max-width:435px) and (min-width:369px) {
+            
+            #phone{
+                top: 5vh;
+            }
+            #dot{
+                top: 60px;
+            }
+            
+        } */
+
+        @media screen and (max-width:670px){
+
+            #love{
+                font-size: 20px;
+            }
+            
+        }
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+        footer{
+            background-color: black;
+            height: 15vh;
+            width: 99vw;
+            position: relative;
+            top: 25vh;
+            left: -10px;
+        }
+
+        #footer-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+        }
+
+        .footer-items{
+            margin-top: 10px;
+            width: 40px;
+            height: 40px;
+            box-sizing: border-box;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 180px;
+            overflow: hidden;
+            transition: opacity 250ms linear;
+            cursor: pointer;
+        }
+        
+        .footer-items:hover{
+            opacity: 0.5;
+        }
+
+        .footer-items:nth-of-type(2){
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+
+        .footer-items img{
+            width: 100%;
+            height: 100%;
+        }
+        #copyright{
+            text-align: center;
+            color: white;
+            margin-top: 0;
+            transition: color 250ms linear;
+        }
+        #copyright:hover{
+            color: gray;
+        }
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+        @media screen and (max-width:981px) {
+            
+            #logo{
+                margin-left: 50px;
+            }
+
+            header{
+                width: 100vw;
+            }
+
+
+            nav{
+                display: none;
+            }
+
+            #hover-bar
+            {
+                width: 50px;
+                height: 7vh;
+                background-color: orange;
+                border: 5px solid orange;
+                border-left: 10px solid orange;
+                border-right: 10px solid orange;
+                border-radius: 5px;
+                position: absolute;
+                right:15px ;
+                top: 0;
+                
+                margin-top: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            #hover-bar:hover{
+                background-color: #FF8C00;
+                border: 5px solid #FF8C00;
+                border-left: 10px solid #FF8C00;
+                border-right: 10px solid #FF8C00;
+                border-radius: 5px;
+            }
+        
+            .lines{
+                width: 100%;
+                height: 5px;
+                background-color: white;
+                border: 1px solid white;
+                border-radius: 5px;
+                margin-top: 8px;
+            }
+            
+            .lines:first-of-type{
+                margin-top: 3px;
+            }
+            
+            /* #hiddennav-container{
+                z-index: -1;
+                width: 99vw;
+                height: 60vh;
+                font-size: 60px;
+                background-color: orange;
+                position: relative;
+                left: -10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                display: none;
+            }
+        
+            .hidden-nav{
+                text-align: center;
+                width: 100%;
+                text-decoration: none;
+                list-style: none;
+                color: white;
+                background-color: orange;
+                border: 1px solid orange;
+            }
+            #first{
+                margin-top: 7vh;
+            }
+            #hover-bar:hover + #hiddennav-container{
+                display: flex;
+            } */
+
+            @media screen and (max-width:340px) {
+
+                #hover-bar{
+                    width: 25px;
+                    height: 5vh;
+                }
+                #logo{
+                    font-size: 30px;
+                    margin-left: 25px;
+                }
+                
+            }
+            
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <a href="" id="logo">FoodVilla</a>
+        <nav>
+            <a href="#" class="nav-items">Home</a>
+            <a href="#" class="nav-items">Services</a>
+            <a href="#" class="nav-items">Order</a>
+            <a href="#" class="nav-items">Menu</a>
+            <a href="#" class="nav-items">About</a>
+        </nav>
+    </header>
+    <div id="hover-bar">
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+    </div>
+    <div id="hiddennav-container">
+        <a href="#" id="first" class="hidden-nav">Home</a>
+        <a href="#" class="hidden-nav">Services</a>
+        <a href="#" class="hidden-nav">Order</a>
+        <a href="#" class="hidden-nav">Menu</a>
+        <a href="#" class="hidden-nav">About</a>
+    </div>
+    <div id="slide-show">
+            <img class="animation-img" src="https://images.pexels.com/photos/4099238/pexels-photo-4099238.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+            <img class="animation-img" src="https://images.pexels.com/photos/1065030/pexels-photo-1065030.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+
+            <img class="animation-img" src="https://images.pexels.com/photos/3850838/pexels-photo-3850838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" >
+
+            <img class="animation-img" src="https://images.pexels.com/photos/1120858/pexels-photo-1120858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=640&w=940" alt="">
+    </div>
+    <h1>Our Best Cuisine</h1>
+    <div id="card-div">
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1496412705862-e0088f16f791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="">
+
+            <div class="info">
+                <h2>Food Name</h2>
+                <h3>Price: 100$</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid doloribus voluptatum tempore ratione beatae iusto accusamus vitae alias debitis ullam, autem nulla dolores fugiat facilis similique, culpa odit quae.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+
+            <div class="info">
+                <h2>Food Name</h2>
+                <h3>Price: 100$</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid doloribus voluptatum tempore ratione beatae iusto accusamus vitae alias debitis ullam, autem nulla dolores fugiat facilis similique, culpa odit quae.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+
+            <div class="info">
+                <h2>Food Name</h2>
+                <h3>Price: 100$</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid doloribus voluptatum tempore ratione beatae iusto accusamus vitae alias debitis ullam, autem nulla dolores fugiat facilis similique, culpa odit quae.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1572862905000-c5b6244027a5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZGlubmVyfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+
+            <div class="info">
+                <h2>Food Name</h2>
+                <h3>Price: 100$</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid doloribus voluptatum tempore ratione beatae iusto accusamus vitae alias debitis ullam, autem nulla dolores fugiat facilis similique, culpa odit quae.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1542528180-a1208c5169a5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8ZGlubmVyfGVufDB8MHwwfGJsYWNrfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+
+            <div class="info">
+                <h2>Food Name</h2>
+                <h3>Price: 100$</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid doloribus voluptatum tempore ratione beatae iusto accusamus vitae alias debitis ullam, autem nulla dolores fugiat facilis similique, culpa odit quae.</p>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="https://images.unsplash.com/photo-1529566745363-92b5ed5e261c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjIwfHxicmVha2Zhc3R8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+
+            <div class="info">
+                <h2>Food Name</h2>
+                <h3>Price: 100$</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquid doloribus voluptatum tempore ratione beatae iusto accusamus vitae alias debitis ullam, autem nulla dolores fugiat facilis similique, culpa odit quae.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1>Contact Us</h1>
+
+    <div id="contact-us">
+        <div id="left">
+            <div id="phone">
+                <div id="dot"></div>
+            </div>
+            <p id="love">
+                Fell Free To Contact Us
+                <br>
+                <br>
+                You can Share Your Experience with us.
+            </p>
+        </div>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="First Name" id="firstname" >
+                    </td>
+                    
+                    <td>
+                        <input type="text" placeholder="Last Name" id="lastname" >
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <input type="number" placeholder="Mobile Number" id="mobilenumber" >
+                    </td>
+                    
+                    <td>
+                        <input type="email" placeholder="Email address" id="email" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <textarea name="mytext" id="" cols="30" rows="10" placeholder="Say Something To us"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="submit">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+    <footer>
+        <div id="footer-container">
+            <div class="footer-items">
+                <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-jaune.png" alt="">
+            </div>
+            <div class="footer-items">
+                    <img src="https://www.iconsdb.com/icons/preview/orange/linkedin-4-xxl.png" alt="">
+            </div>
+            <div class="footer-items">
+                    <img src="https://www.pngfind.com/pngs/m/414-4148205_orange-transparent-email-icon-light-blue-mail-icon.png" alt="">
+            </div>
+        </div>
+            <p id="copyright">© Designed and Developed By Piyush Gupta</p>
+    </footer>
+</body>
+</html>
